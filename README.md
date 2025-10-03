@@ -49,7 +49,7 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 
 ---
 
-### Dataset
+# Dataset
 
 This project uses the `movies_metadata.csv` and `keywords.csv` datasets from [Kaggle - The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset).  
 Download the datasets and place the CSV files in a folder named `data/` before running the program.
