@@ -1,5 +1,5 @@
 # Movie-Recommender
-Python program that will take a movie title for an input and recommend similar movies.
+Python program that takes a movie title as input and recommends similar movies.
 This system outputs 10 movies by analyzing movie summary data and applying different techniques to identify similar keywords and themes.
 
 <p align="center">
@@ -22,6 +22,7 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 ---
 
 # How It Works
+
 1. Data Loading and Cleaning
 - Merges movies_metadata.csv and keywords.csv.
 - Removes movies with missing information or fewer than 500 votes.
@@ -45,6 +46,13 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 - NLTK
 - scikit-learn
 - Tkinter
+
+---
+
+### Dataset
+
+This project uses the `movies_metadata.csv` and `keywords.csv` datasets from [Kaggle - The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset).  
+Download the datasets and place the CSV files in a folder named `data/` before running the program.
 
 ---
 
