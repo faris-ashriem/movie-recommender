@@ -24,17 +24,17 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 # How It Works
 
 1. Data Loading and Cleaning
-   - Merges movies_metadata.csv and keywords.csv.
-   - Removes movies with missing information or fewer than 500 votes.
-   - Preprocesses text by lemmatizing and removing stopwords.
+    - Merges movies_metadata.csv and keywords.csv.
+    - Removes movies with missing information or fewer than 500 votes.
+    - Preprocesses text by lemmatizing and removing stopwords.
 2. Feature Extraction
-   - Combines movie overview and keywords into a single text feature.
-   - Converts text to TF-IDF vectors.
+    - Combines movie overview and keywords into a single text feature.
+    - Converts text to TF-IDF vectors.
 3. Similarity Calculation
-   - Uses cosine similarity between TF-IDF vectors to find similar movies.
+    - Uses cosine similarity between TF-IDF vectors to find similar movies.
 4. Recommendation
-   - Finds the most similar movies to the input title based on similarity value results.
-   - Returns a list of 10 movies in descending order of similarity.
+    - Finds the most similar movies to the input title based on similarity value results.
+    - Returns a list of 10 movies in descending order of similarity.
 
 ---
 
