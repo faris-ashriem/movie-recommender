@@ -24,9 +24,9 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 # How It Works
 
 1. Data Loading and Cleaning
-  - Merges movies_metadata.csv and keywords.csv.
-  - Removes movies with missing information or fewer than 500 votes.
-  - Preprocesses text by lemmatizing and removing stopwords.
+   - Merges movies_metadata.csv and keywords.csv.
+   - Removes movies with missing information or fewer than 500 votes.
+   - Preprocesses text by lemmatizing and removing stopwords.
 2. Feature Extraction
   - Combines movie overview and keywords into a single text feature.
   - Converts text to TF-IDF vectors.
