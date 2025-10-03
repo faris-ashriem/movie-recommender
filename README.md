@@ -10,11 +10,43 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 
 ---
 
-Features
+# Features
 
--Recommends 10 similar movies based on a given movie title.
--Handles user input errors gracefully (movie not found).
--Clean Tkinter GUI with simple fonts and styling.
--Uses NLTK for text preprocessing using Lemmatization and Stopword Removal
--Analyzes movie overviews to understand plot and content.
--Searches keywords to identify key themes and topics for better recommendations.
+- Recommends 10 similar movies based on a given movie title.
+- Handles user input errors gracefully (movie not found).
+- Clean Tkinter GUI with simple fonts and styling.
+- Uses NLTK for text preprocessing using Lemmatization and Stopword Removal
+- Analyzes movie overviews to understand plot and content.
+- Searches keywords to identify key themes and topics for better recommendations.
+
+---
+
+# How It Works
+1. Data Loading and Cleaning
+- Merges movies_metadata.csv and keywords.csv.
+- Removes movies with missing information or fewer than 500 votes.
+- Preprocesses text by lemmatizing and removing stopwords.
+2. Feature Extraction
+- Combines movie overview and keywords into a single text feature.
+- Converts text to TF-IDF vectors.
+3. Similarity Calculation
+- Uses cosine similarity between TF-IDF vectors to find similar movies.
+4. Recommendation
+- Finds the most similar movies to the input title.
+- Returns a list of 10 movies in descending order of similarity.
+
+---
+
+# Dependencies
+
+- Python 3.x
+- Pandas
+- NumPy
+- NLTK
+- scikit-learn
+- Tkinter
+
+# Notes
+
+- The system relies on movie overviews and keywords, so movies without overviews or keywords will not appear in recommendations.
+- Only considers movies with more than 500 votes to avoid obscure or low-quality results.
