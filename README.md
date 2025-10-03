@@ -32,7 +32,7 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 3. Similarity Calculation
 - Uses cosine similarity between TF-IDF vectors to find similar movies.
 4. Recommendation
-- Finds the most similar movies to the input title.
+- Finds the most similar movies to the input title based on similarity value results.
 - Returns a list of 10 movies in descending order of similarity.
 
 ---
@@ -45,6 +45,8 @@ This system outputs 10 movies by analyzing movie summary data and applying diffe
 - NLTK
 - scikit-learn
 - Tkinter
+
+---
 
 # Notes
 
